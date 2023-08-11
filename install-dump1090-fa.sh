@@ -136,7 +136,7 @@ fi
 if grep -qs /etc/default/dump1090-fa -e 'CONFIG_STYLE.*6'; then
     echo "dump1090-fa 6 config style not supported, just edit the file yourself!"
     echo "Support might be added in the future, in the meantime consider using readsb if you don't want to edit the config by hand:"
-    echo "https://github.com/wiedehopf/adsb-scripts/wiki/Automatic-installation-for-readsb"
+    echo "https://github.com/adsbfi/adsb-scripts/wiki/Automatic-installation-for-readsb"
     exit 1
 fi
 

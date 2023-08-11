@@ -37,7 +37,7 @@ fi
 chmod 666 /etc/fr24feed.ini
 
 
-wget -O /etc/systemd/system/fr24feed.service https://raw.githubusercontent.com/wiedehopf/adsb-scripts/master/fr24feed.service
+wget -O /etc/systemd/system/fr24feed.service https://raw.githubusercontent.com/adsbfi/adsb-scripts/master/fr24feed.service
 systemctl enable fr24feed
 
 

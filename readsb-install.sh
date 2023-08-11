@@ -19,7 +19,7 @@ if [ -f /boot/piaware-config.txt ]; then
     exit 1
 fi
 
-repository="https://github.com/wiedehopf/readsb.git"
+repository="https://github.com/adsbfi/readsb.git"
 
 if [[ -f /usr/lib/fr24/fr24feed_updater.sh ]]; then
     #fix readonly remount logic in fr24feed update script, doesn't do anything when fr24 is not installed
@@ -39,7 +39,7 @@ mkdir -p $ipath
 
 if grep -E 'wheezy|jessie' /etc/os-release -qs; then
     # make sure the rtl-sdr rules are present on ancient systems
-    wget -O /tmp/rtl-sdr.rules https://raw.githubusercontent.com/wiedehopf/adsb-scripts/master/osmocom-rtl-sdr.rules
+    wget -O /tmp/rtl-sdr.rules https://raw.githubusercontent.com/adsbfi/adsb-scripts/master/osmocom-rtl-sdr.rules
     cp /tmp/rtl-sdr.rules /etc/udev/rules.d/
 fi
 
@@ -237,7 +237,7 @@ chmod a+x /usr/local/bin/readsb-set-location
 echo --------------
 cd "$ipath"
 
-wget -O tar1090-install.sh https://raw.githubusercontent.com/wiedehopf/tar1090/master/install.sh
+wget -O tar1090-install.sh https://raw.githubusercontent.com/adsbfi/tar1090/master/install.sh
 bash tar1090-install.sh /run/readsb
 
 if ! systemctl show readsb | grep 'ExecMainStatus=0' -qs; then
@@ -255,7 +255,7 @@ if ! systemctl show readsb | grep 'ExecMainStatus=0' -qs; then
         echo "       common issues: SDR not plugged in."
         echo "       the webinterface will show an error until readsb is running!"
         echo "       If you can't fix the issue:"
-        echo "            Open a github issue or contact wiedehopf on the adsbexchange discord and post the above 30 lines of log!"
+        echo "            Open a github issue or join adsb.fi discord and post the above 30 lines of log!"
         echo --------------
     fi
 else

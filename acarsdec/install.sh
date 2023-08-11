@@ -5,7 +5,7 @@ renice 10 $$
 
 cd /tmp
 
-repo="https://github.com/wiedehopf/adsb-scripts"
+repo="https://github.com/adsbfi/adsb-scripts"
 ipath=/usr/local/share/adsb-scripts
 stuff="git cmake libusb-1.0-0-dev librtlsdr-dev librtlsdr0"
 branch="master"
@@ -54,7 +54,7 @@ adduser acarsdec plugdev
 
 GIT="$ipath/acarsdec-git"
 #getGIT https://github.com/TLeconte/acarsdec "$branch" "$GIT"
-getGIT https://github.com/wiedehopf/acarsdec "$branch" "$GIT"
+getGIT https://github.com/adsbfi/acarsdec "$branch" "$GIT"
 
 cd "$GIT"
 

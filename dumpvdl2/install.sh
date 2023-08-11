@@ -5,7 +5,7 @@ renice 10 $$
 
 cd /tmp
 
-repo="https://github.com/wiedehopf/adsb-scripts"
+repo="https://github.com/adsbfi/adsb-scripts"
 ipath=/usr/local/share/adsb-scripts
 stuff="build-essential cmake git libglib2.0-dev pkg-config libusb-1.0-0-dev librtlsdr-dev librtlsdr0"
 branch="master"

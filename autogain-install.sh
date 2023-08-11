@@ -17,7 +17,7 @@ if ! [[ -f /etc/default/readsb ]] && grep -qs /etc/default/dump1090-fa -e 'CONFI
     echo dump1090-fa new config style is not supported, sorry.
     echo Also dump1090-fa version 6 has its own autogain, that should be sufficient.
     echo Try readsb if you want to continue using this script:
-    echo "https://github.com/wiedehopf/adsb-scripts/wiki/Automatic-installation-for-readsb"
+    echo "https://github.com/adsbfi/adsb-scripts/wiki/Automatic-installation-for-readsb"
     echo ------------
     systemctl disable autogain1090.timer &>/dev/null
     systemctl stop autogain1090.timer &>/dev/null

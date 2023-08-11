@@ -5,7 +5,7 @@ renice 10 $$
 
 cd /tmp
 
-repo="https://github.com/wiedehopf/adsb-scripts"
+repo="https://github.com/adsbfi/adsb-scripts"
 ipath=/usr/local/share/adsb-scripts
 stuff="git cmake zlib1g-dev"
 branch="master"

@@ -1,6 +1,6 @@
 [Unit]
 Description=pingfail - reboot when there is no internet
-Documentation=https://github.com/wiedehopf/adsb-scripts/wiki/pingfail
+Documentation=https://github.com/adsbfi/adsb-scripts/wiki/pingfail
 Wants=network.target
 After=network.target
 
